@@ -1,0 +1,33 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: red;
+}
+.img-box{
+	column-count: 4;
+	column-gap: 3px;
+	width: 85%;
+	max-width: 1300px;
+	margin: auto;
+	overflow: hidden;
+}
+.image{
+	max-width: 100%;
+	display: block;
+	transition: 2.0s;
+	z-index: 10;
+}
+.image:hover{
+	box-shadow: 0 0 10px 1px rgba(0, 128, 128);
+	transform: scale(1.2);
+	z-index: 15;
+}
+.image-wrapper{
+	display: block;
+}
+.image-wrapper + .image-wrapper{
+	margin: 3px 0;
+}
